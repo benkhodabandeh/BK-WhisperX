@@ -6,25 +6,17 @@
 
 - تبدیل صدا و ویدیو به متن
 - استخراج زیرنویس (SRT/VTT) و متن تمیز (TXT)
-- پشتیبانی از فارسی/فرسی
-- استفاده از GPU ادرین (CUDA)
+- پشتیبانی از فارسی
+- استفاده از (CUDA)
 - نصب خودکار محیط اجرای Python و کتابخانه‌ها
 
 ### نصب سریع (Quick Install)
 
-1. فایل `BK-WhisperX-Setup-1.1.0.exe` را از صفحه 릴리ز دانلود کنید
+1. فایل `BK-WhisperX-Setup-1.1.0.exe` را از صفحه Releases دانلود کنید
 2. نصب‌کننده را اجرا کنید
 3. در اولین اجرا، محیط اجرای Python 3.11، PyTorch، WhisperX و FFmpeg نصب می‌شوند
 
-### مثال‌های فارسی
-
-```powershell
-# رونویسی فارسی
-python bk_whisperx.py -i "فایل.mp4" -o "خروجی" --model large-v3 --language fa --task transcribe
-
-# استفاده از GPU
-python bk_whisperx.py -i "فایل.mp4" --device cuda --language fa --format srt
-```
+##
 
 ### مدل‌های پیشنهادی برای فارسی
 
