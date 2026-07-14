@@ -1,5 +1,43 @@
 # BK WhisperX
 
+## راهنمای فارسی (Persian Guide)
+
+**BK WhisperX** یک ابزار خط فرمان برای رونویسی محلی است که از مدل‌های WhisperX استفاده می‌کند. این ابزار قابلیت‌های زیر را دارد:
+
+- تبدیل صدا و ویدیو به متن
+- استخراج زیرنویس (SRT/VTT) و متن تمیز (TXT)
+- پشتیبانی از فارسی/فرسی
+- استفاده از GPU ادرین (CUDA)
+- نصب خودکار محیط اجرای Python و کتابخانه‌ها
+
+### نصب سریع (Quick Install)
+
+1. فایل `BK-WhisperX-Setup-1.1.0.exe` را از صفحه 릴리ز دانلود کنید
+2. نصب‌کننده را اجرا کنید
+3. در اولین اجرا، محیط اجرای Python 3.11، PyTorch، WhisperX و FFmpeg نصب می‌شوند
+
+### مثال‌های فارسی
+
+```powershell
+# رونویسی فارسی
+python bk_whisperx.py -i "فایل.mp4" -o "خروجی" --model large-v3 --language fa --task transcribe
+
+# استفاده از GPU
+python bk_whisperx.py -i "فایل.mp4" --device cuda --language fa --format srt
+```
+
+### مدل‌های پیشنهادی برای فارسی
+
+| مدل | توضیح |
+|-----|-------|
+| `large-v3` | بهترین دقت برای فارسی |
+| `large-v2` | گزینه قدیمی‌تر با کیفیت خوب |
+| **نکته** | از `distil-large-v3` استفاده نکنید، فقط انگلیسی است |
+
+---
+
+# BK WhisperX (English)
+
 **BK WhisperX** is a local WhisperX transcription CLI tool with managed runtime installation.
 
 It transcribes audio and video, exports clean text and subtitles, supports Persian/Farsi, and can use an NVIDIA GPU. The machine-learning runtime is kept separate from the application so upgrades do not repeatedly download models and libraries.
