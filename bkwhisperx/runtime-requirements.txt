@@ -1,0 +1,7 @@
+# Runtime dependencies are isolated from the launcher and kept across app upgrades.
+whisperx==3.8.6
+transformers>=4.48,<5
+tqdm==4.68.4
+arabic-reshaper==3.0.1
+python-bidi==0.6.11
+imageio-ffmpeg==0.6.0

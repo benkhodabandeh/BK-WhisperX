@@ -1,0 +1,16 @@
+include CHANGELOG.md
+include IMPLEMENTATION_AUDIT.md
+include RELEASE_NOTES_v1.1.0.md
+include SECURITY.md
+include PUSH_TO_GITHUB.md
+include bk_whisperx.py
+include cli_entry.py
+include gui_entry.py
+include bk-whisperx.sh
+include *.bat
+recursive-include scripts *.ps1
+recursive-include installer *.iss
+recursive-include assets *.manifest *.txt
+recursive-include .github *.yml
+recursive-include tests *.py
+recursive-include bkwhisperx *.txt
