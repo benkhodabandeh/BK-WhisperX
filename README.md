@@ -12,9 +12,10 @@
 
 ### نصب سریع (Quick Install)
 
-1. فایل `BK-WhisperX-Setup-1.1.0.exe` را از صفحه Releases دانلود کنید
-2. نصب‌کننده را اجرا کنید
-3. در اولین اجرا، محیط اجرای Python 3.11، PyTorch، WhisperX و FFmpeg نصب می‌شوند
+1. فایل `Source Code (zip)` را از صفحه Releases دانلود کنید
+2. فایل زیپ را در محلی امن و ثابت استخراج کنید.
+3. فایل BK-WhisperX.bat را اجرا کنید.
+4.  در اولین اجرا، محیط اجرای Python 3.11، PyTorch، WhisperX و FFmpeg نصب می‌شوند
 
 ##
 
